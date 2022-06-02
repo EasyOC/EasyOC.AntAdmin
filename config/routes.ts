@@ -41,6 +41,33 @@
     icon: 'table',
     path: '/list',
     component: './TableList',
+  }, {
+    name: 'editor',
+    icon: 'highlight',
+    path: '/editor',
+    routes: [
+      {
+        path: '/editor',
+        redirect: '/editor/flow',
+      },
+      {
+        name: 'amisEditor',
+        path: '/editor/amis',
+        component: './editor/amis',
+      },
+      {
+        name: 'flow',
+        icon: 'smile',
+        path: '/editor/flow',
+        component: './editor/flow',
+      },
+      {
+        name: 'koni',
+        icon: 'smile',
+        path: '/editor/koni',
+        component: './editor/koni',
+      },
+    ],
   },
   {
     path: '/',
